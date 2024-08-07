@@ -383,13 +383,11 @@ margin: 35px 0;
 /*footer*/
 
 footer{
-    display: flex;
-    background-color: rgba(0,0,0,0.05);
-   margin-top: 50px;
-   bottom:  0;
-    left: 0;
-    right: 0;
-    display: flex;
+    
+    background-color: rgba(225, 18, 18, 0.05);
+    margin-top: 50px;
+    bottom:  0;
+    
     align-items: center;
     justify-content: space-between;
     
@@ -399,7 +397,8 @@ footer .services_list{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    margin: 20px;
+    
 }
 .service img{
     width: 40px;
