@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test javascript</title>
+  </head>
+  <body>
+    <section>
+      <h1>hello</h1>
+      <form>
+        <input type="text" placeholder="Login" />
+        <input type="password" placeholder="Mot de passe" />
+        <input type="submit" value="S'authentifier" />
+      </form>
+    </section>
+    <style>
+      body {
+        margin: 0;
+      }
+      section {
+        height: 100vh;
+
+        justify-content: center;
+        background-image: url("C:/Users/User/Desktop/stage/fond-ecran-abstrait-images-conception-fond-ecran-ai-genere_643360-74454.jpg");
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        animation-name: back;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+      form {
+        width: 500px;
+        padding: 60px;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.4);
+        box-sizing: border-box;
+      }
+      input {
+        display: block;
+        width: 300px;
+        margin: 10px auto;
+        flex-direction: column;
+        outline: none;
+        box-sizing: border-box;
+        border-radius: 6px;
+      }
+      input[type="submit"] {
+        background-color: rgb(4, 254, 96);
+        font-weight: bold;
+        cursor: pointer;
+      }
+      @keyframes back {
+        0% {
+          filter: hue-rotate(0deg);
+        }
+        100% {
+          filter: hue-rotate(360deg);
+        }
+      }
+    </style>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js">
+      const textanim=document.querySelector('h1')
+      new typewriter(textanim, {
+          //deletespeed: 20
+      })
+      .typeString('Bonjour tout le monde. Je suis <trong>PATRICK EMERY !')
+      .pausefor(300)
+      .typeString('identifier vous pour acceder a mon site web')
+      .start()
+    </script>
+  </body>
+</html>
